@@ -1,4 +1,4 @@
-# Be replica
+# Be Replica - berep
 ## Get Started
 
 You can either `cd` into each directory and run the separate stacks as individual applications, or use the included `docker-compose.yml` file to spin everything up under Docker containers.
