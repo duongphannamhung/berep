@@ -4,6 +4,7 @@ import LandingView from '@/views/LandingView.vue'
 import LocationView from '@/views/LocationView.vue'
 import MapView from '@/views/MapView.vue'
 import TripView from '@/views/TripView.vue'
+import DriverListeningView from '@/views/DriverListeningView.vue'
 import StandbyView from '@/views/StandbyView.vue'
 import DriverRegisterView from '@/views/DriverRegisterView.vue'
 import DrivingView from '@/views/DrivingView.vue'
@@ -36,6 +37,11 @@ const router = createRouter({
       path: '/trip',
       name: 'trip',
       component: TripView
+    },
+    {
+      path: '/driverlistening',
+      name: 'driverlistening',
+      component: DriverListeningView
     },
     {
       path: '/standby',

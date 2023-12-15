@@ -56,7 +56,7 @@ const handleSaveDriver = () => {
     http().post('/api/driver', driverDetails)
         .then((response) => {
             router.push({
-                name: 'standby'
+                name: 'driverlistening'
             })
         })
         .catch((error) => {

@@ -1,5 +1,8 @@
 <template>
-    <span class="loader"></span>
+    <div class="flex flex-col items-center">
+        <span class="loader"></span>
+        <button @click="standByButtonClick" class="my-12 mx-auto inline-flex justify-center rounded-md border border-transparent bg-black py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-gray-600 focus:outline-none">Tạm nghỉ</button>
+    </div>
 </template>
 <style>
 .loader {
@@ -39,3 +42,19 @@
     }
 }
 </style>
+<script setup>
+import { useRouter } from 'vue-router'
+const router = useRouter()
+// export default {
+//   methods: {
+//     standByButtonClick() {
+//       // Add your button click functionality here
+//     },
+//   },
+// };
+const standByButtonClick = () => {
+    router.push({
+        name: 'standby'
+    })
+}
+</script>

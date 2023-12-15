@@ -117,7 +117,7 @@ const handleCompleteTrip = () => {
                 location.reset()
 
                 router.push({
-                    name: 'standby'
+                    name: 'driverlistening'
                 })
             }, 3000)
         })
